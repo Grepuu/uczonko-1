@@ -1,0 +1,41 @@
+﻿@model Codetown.Biuromat.Web.Data.Entities.BuildingEntity
+
+<h3>
+    Budynek
+</h3>
+<p>
+    <strong>
+        nazwa: 
+    </strong>
+    @Model.Name
+</p>
+<p>
+    <strong>
+        adres: 
+    </strong>
+    @Model.Address
+</p>
+<p>
+    <strong>
+        data utworzenia: 
+    </strong>
+    @Model.CreatedAt
+</p>
+<p>
+    <strong>
+        data aktualizacji: 
+    </strong>
+    @Model.UpdatedAt
+</p>
+<p>
+    <strong>
+        ilość pokoi 
+    </strong>
+    @Model.Rooms.Count
+</p>
+
+<h4>
+    Pokoje
+</h4>
+
+[lista pokoi]

@@ -1,0 +1,53 @@
+﻿@model ICollection<Codetown.Biuromat.Web.Data.Entities.BuildingEntity>
+
+admin building list view
+
+lista budynków
+
+<table>
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            Nazwa
+        </th>
+        <th>
+            Adres budynku
+        </th>
+        <th>
+            Data dodania
+        </th>
+        <th>
+            Liczba pokoi
+        </th>
+        <th>
+            
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>
+                @item.Id
+            </th>
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @item.Address
+            </td>
+            <td>
+                @item.CreatedAt
+            </td>
+            <td>
+                @item.Rooms.Count
+            </td>
+            <td>
+                <a asp-controller="AdminBuilding" asp-action="Details" asp-route-id="@item.Id">
+                    otwórz
+                </a>
+            </td>
+        </tr>
+    }
+</table>

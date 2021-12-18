@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">
+        Strona główna
+    </h1>
+</div>
+
+@DateTime.Now
+
+<a asp-controller="AdminBuilding" asp-action="Index">
+    administracja budynkami
+</a>
+<hr/>
+
+<a asp-controller="Authorisation" asp-action="Login">
+    idź do: autoryzacja logowanie
+</a><br/>
+
+<a asp-controller="Authorisation" asp-action="Registration">
+    idź do: autoryzacja rejestracja
+</a><br/>
+
+<a asp-controller="Authorisation" asp-action="PasswordReset">
+    idź do: autoryzacja reset
+</a><br/>
+
+<a asp-controller="Account" asp-action="Index">
+    idź do: konto Index
+</a><br/>
+
+<a asp-controller="Account" asp-action="Access">
+    idź do: konto Access
+</a><br/>
+
+<a asp-controller="Account" asp-action="Room">
+    idź do: konto Room
+</a><br/>
+
+<a asp-controller="Account" asp-action="Profile">
+    idź do: konto Profile
+</a><br/>
+
+<a asp-controller="Account" asp-action="AddFile">
+    idź do: konto AddFile
+</a><br/>
+
+<a asp-controller="Account" asp-action="PasswordChange">
+    idź do: konto PasswordChange
+</a><br/>
+
+<a asp-controller="Administration" asp-action="Index">
+    idź do: admin logowanie
+</a><br/>
+
+<a asp-controller="Administration" asp-action="BuildingDetails">
+    idź do: admin BuildingDetails
+</a><br/>
+
+<a asp-controller="Administration" asp-action="BuildingList">
+    idź do: admin BuildingList
+</a><br/>
+
+<a asp-controller="Administration" asp-action="RoleDetails">
+    idź do: admin RoleDetails
+</a><br/>
+
+<a asp-controller="Administration" asp-action="RoleList">
+    idź do: admin RoleList
+</a><br/>
+
+<a asp-controller="Administration" asp-action="RoomList">
+    idź do: admin RoomList
+</a><br/>
+
+<a asp-controller="Administration" asp-action="RoomDetails">
+    idź do: admin RoomDetails
+</a><br/>
+
+<a asp-controller="Administration" asp-action="UserDetails">
+    idź do: admin UserDetails
+</a><br/>
+
+<a asp-controller="Administration" asp-action="UserList">
+    idź do: admin UserList
+</a><br/>
